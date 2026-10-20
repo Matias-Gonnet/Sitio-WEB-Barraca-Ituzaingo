@@ -39,5 +39,8 @@ function actualizarEstado() {
   punto.style.animation = abierto ? '' : 'none';
 }
 
-actualizarEstado();
-setInterval(actualizarEstado, 60000);
+// Solo en páginas que muestran el indicador de estado (inicio y contacto)
+if (document.querySelector('.status')) {
+  actualizarEstado();
+  setInterval(actualizarEstado, 60000);
+}

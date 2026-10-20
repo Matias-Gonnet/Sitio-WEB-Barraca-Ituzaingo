@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/paginas.css">
 </head>
 <body>
 
@@ -17,10 +18,10 @@
     <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav id="nav">
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
+        <li><a href="#inicio" aria-current="page">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
         <li><a class="cta" href="tel:099537307">Llamar</a></li>
       </ul>
     </nav>
@@ -39,7 +40,8 @@
         <p>Vidriería y ferretería en Av. Ituzaingó. Venite a ver, preguntá por lo que necesitás y te asesoramos.</p>
         <div class="btns">
           <a class="btn main" href="https://wa.me/59899537307" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn" href="#contacto">Cómo llegar</a>
+          <a class="btn" href="productos.html">Ver productos</a>
+          <a class="btn" href="contacto.html">Cómo llegar</a>
         </div>
       </div>
       <div class="logo-card">
@@ -51,21 +53,6 @@
   <div class="band" aria-hidden="true">
     <div><span>Pinturas</span><span>🎨</span><span>Vidrios</span><span>🪟</span><span>Herramientas</span><span>🔧</span><span>Materiales</span><span>🧱</span><span>Pinturas</span><span>🎨</span><span>Vidrios</span><span>🪟</span><span>Herramientas</span><span>🔧</span><span>Materiales</span><span>🧱</span></div>
   </div>
-
-  <section id="productos">
-    <div class="w">
-      <h2>Qué vas a encontrar</h2>
-      <p class="lead">Una barraca de barrio con lo necesario para arreglar, construir y renovar.</p>
-      <div class="grid">
-        <div class="card" style="--c:var(--r)"><b>🎨</b><h3>Pinturas y accesorios</h3><p>Pinturas, rodillos, pinceles y todo para dar color a cada ambiente.</p></div>
-        <div class="card" style="--c:var(--t)"><b>🪟</b><h3>Vidriería</h3><p>Vidrios y espejos a medida, colocación y reposición.</p></div>
-        <div class="card" style="--c:var(--o)"><b>🔧</b><h3>Ferretería</h3><p>Herramientas, tornillería, cerraduras y artículos del hogar.</p></div>
-        <div class="card" style="--c:var(--g)"><b>🧱</b><h3>Materiales</h3><p>Materiales de construcción para obras grandes y arreglos chicos.</p></div>
-        <div class="card" style="--c:var(--p)"><b>🚿</b><h3>Sanitaria</h3><p>Griferías, caños y accesorios para baño y cocina.</p></div>
-        <div class="card" style="--c:var(--y)"><b>💡</b><h3>Electricidad</h3><p>Cables, lámparas y artículos eléctricos.</p></div>
-      </div>
-    </div>
-  </section>
 
   <section id="nosotros">
     <div class="w about">
@@ -79,30 +66,6 @@
         <div><strong>Variedad</strong><span>Mucho más que ferretería.</span></div>
         <div><strong>Vidrios a medida</strong><span>Consultá por tu medida.</span></div>
         <div><strong>En el barrio</strong><span>Cerca y fácil de encontrar.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contacto" style="padding-top:1rem">
-    <div class="w">
-      <div class="contact">
-        <div>
-          <h2>Contacto</h2>
-          <ul>
-            <li><small>Dirección</small><a href="https://www.google.com/maps/search/?api=1&query=Av.+Ituzaingó+y+Elías+Regules" target="_blank" rel="noopener">Av. Ituzaingó, entre Elías Regules y Plazoleta Martín Fierro</a></li>
-            <li><small>Teléfono fijo</small><a href="tel:44728607">4472 8607</a></li>
-            <li><small>Celular y WhatsApp</small><a href="https://wa.me/59899537307" target="_blank" rel="noopener">099 537 307</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 style="font-size:1.6rem">Horarios</h2>
-          <table class="hrs">
-            <tr><td>Lunes a viernes</td><td>8:00–12:30 · 14:00–18:30</td></tr>
-            <tr><td>Sábados</td><td>8:00–13:00</td></tr>
-            <tr><td>Domingos</td><td>Cerrado</td></tr>
-          </table>
-          <a class="btn main" href="tel:099537307">Llamar ahora</a>
-        </div>
       </div>
     </div>
   </section>

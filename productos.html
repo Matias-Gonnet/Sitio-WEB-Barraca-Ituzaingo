@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Productos · Barraca Ituzaingó</title>
+<meta name="description" content="Pinturas, vidrios y espejos, ferretería, materiales de construcción, maderas, sanitaria, electricidad y jardín. Catálogo de Vidriería y Ferretería Ituzaingo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+
+<header>
+  <div class="w">
+    <a class="brand" href="index.html#inicio"><i></i>Ituzaingó</a>
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="productos.html" aria-current="page">Productos</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a class="cta" href="tel:099537307">Llamar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="blob" style="width:300px;height:300px;background:var(--o);top:-120px;right:-80px"></div>
+    <div class="w">
+      <h1>Productos</h1>
+      <p class="lead">Lo que trabajamos en la barraca, por rubro. Los precios y el stock te los confirmamos por WhatsApp o en el mostrador.</p>
+    </div>
+  </section>
+
+  <section id="catalogo" style="padding-top:1rem">
+    <div class="w">
+      <div class="tools">
+        <label class="sr" for="buscar">Buscar en el catálogo</label>
+        <input id="buscar" type="search" placeholder="Buscá por producto: cemento, látex, grifería…" autocomplete="off">
+        <div class="chips" role="group" aria-label="Filtrar por rubro">
+          <button type="button" class="chip" data-cat="todos" aria-pressed="true">Todo</button>
+          <button type="button" class="chip" style="--c:var(--r)" data-cat="pinturas" aria-pressed="false"><i></i>Pinturas y accesorios</button><button type="button" class="chip" style="--c:var(--t)" data-cat="vidrieria" aria-pressed="false"><i></i>Vidriería</button><button type="button" class="chip" style="--c:var(--o)" data-cat="ferreteria" aria-pressed="false"><i></i>Ferretería</button><button type="button" class="chip" style="--c:var(--g)" data-cat="materiales" aria-pressed="false"><i></i>Materiales de construcción</button><button type="button" class="chip" style="--c:var(--o)" data-cat="maderas" aria-pressed="false"><i></i>Maderas y placas</button><button type="button" class="chip" style="--c:var(--p)" data-cat="sanitaria" aria-pressed="false"><i></i>Sanitaria</button><button type="button" class="chip" style="--c:var(--y)" data-cat="electricidad" aria-pressed="false"><i></i>Electricidad</button><button type="button" class="chip" style="--c:var(--g)" data-cat="jardin" aria-pressed="false"><i></i>Jardín y riego</button>
+        </div>
+      </div>
+
+      <div class="grid" id="lista">
+        <article class="card cat" id="pinturas" data-cat="pinturas" style="--c:var(--r)"><b>🎨</b><h3>Pinturas y accesorios</h3><p>Color para cada ambiente, con todo lo necesario para aplicarlo bien.</p><ul><li>Látex interior y exterior</li><li>Esmaltes sintéticos y al agua</li><li>Barnices, lasures y protectores de madera</li><li>Antióxidos y convertidores de óxido</li><li>Fijadores, selladores y base</li><li>Pinturas para techos y piletas</li><li>Rodillos, felpas y bandejas</li><li>Pinceles y brochas</li><li>Lijas, espátulas y masillas</li><li>Cintas de enmascarar y nylon</li><li>Aguarrás, thinner y diluyentes</li></ul><a class="ask" href="https://wa.me/59899537307?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20pinturas%20y%20accesorios" target="_blank" rel="noopener">Consultar por pinturas y accesorios</a></article>
+        <article class="card cat" id="vidrieria" data-cat="vidrieria" style="--c:var(--t)"><b>🪟</b><h3>Vidriería</h3><p>Vidrios y espejos a medida, con colocación y reposición.</p><ul><li>Vidrios para ventanas y puertas</li><li>Vidrios laminados de seguridad</li><li>Espejos a medida</li><li>Vidrios para mesas y muebles</li><li>Reposición de vidrios rotos</li><li>Colocación</li><li>Masillas, burletes y felpas</li><li>Siliconas para vidrio</li></ul><a class="ask" href="https://wa.me/59899537307?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20vidrier%C3%ADa" target="_blank" rel="noopener">Consultar por vidriería</a></article>
+        <article class="card cat" id="ferreteria" data-cat="ferreteria" style="--c:var(--o)"><b>🔧</b><h3>Ferretería</h3><p>Herramientas y piezas para arreglar, armar y mantener.</p><ul><li>Herramientas manuales</li><li>Herramientas eléctricas y accesorios</li><li>Mechas, brocas y discos</li><li>Tornillería, bulones y arandelas</li><li>Clavos, tarugos y fijaciones</li><li>Cerraduras, candados y bisagras</li><li>Adhesivos, siliconas y selladores</li><li>Cintas, precintos y cadenas</li><li>Escaleras y cajas de herramientas</li><li>Guantes, anteojos y protección personal</li><li>Artículos del hogar</li></ul><a class="ask" href="https://wa.me/59899537307?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20ferreter%C3%ADa" target="_blank" rel="noopener">Consultar por ferretería</a></article>
+        <article class="card cat" id="materiales" data-cat="materiales" style="--c:var(--g)"><b>🧱</b><h3>Materiales de construcción</h3><p>Para obras grandes y arreglos chicos.</p><ul><li>Cemento portland y cal</li><li>Arena y pedregullo</li><li>Ladrillos y bloques</li><li>Hierro de construcción y mallas</li><li>Alambres y clavos de obra</li><li>Membranas asfálticas y aislantes</li><li>Hidrófugos e impermeabilizantes</li><li>Adhesivos cerámicos y pastinas</li><li>Revestimientos y cerámicas</li><li>Yeso y enduídos</li></ul><a class="ask" href="https://wa.me/59899537307?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20materiales%20de%20construcci%C3%B3n" target="_blank" rel="noopener">Consultar por materiales de construcción</a></article>
+        <article class="card cat" id="maderas" data-cat="maderas" style="--c:var(--o)"><b>🪵</b><h3>Maderas y placas</h3><p>Estructura, cerramientos y terminaciones.</p><ul><li>Tirantes y tablas</li><li>Machimbre y listones</li><li>Placas OSB y fenólico</li><li>MDF y aglomerado</li><li>Placas de yeso y perfiles</li><li>Molduras y zócalos</li><li>Aislantes térmicos</li></ul><a class="ask" href="https://wa.me/59899537307?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20maderas%20y%20placas" target="_blank" rel="noopener">Consultar por maderas y placas</a></article>
+        <article class="card cat" id="sanitaria" data-cat="sanitaria" style="--c:var(--p)"><b>🚿</b><h3>Sanitaria</h3><p>Agua, desagües y accesorios para baño y cocina.</p><ul><li>Griferías para baño y cocina</li><li>Caños y conexiones</li><li>Tanques de agua</li><li>Flexibles y llaves de paso</li><li>Sifones y desagües</li><li>Bachas y piletas</li><li>Inodoros y accesorios de baño</li><li>Cinta teflón y selladores</li></ul><a class="ask" href="https://wa.me/59899537307?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20sanitaria" target="_blank" rel="noopener">Consultar por sanitaria</a></article>
+        <article class="card cat" id="electricidad" data-cat="electricidad" style="--c:var(--y)"><b>💡</b><h3>Electricidad</h3><p>Instalación, reposición y luz para el hogar.</p><ul><li>Cables y conductores</li><li>Llaves, tomas y fichas</li><li>Lámparas y luminarias LED</li><li>Térmicas y tableros</li><li>Caños y cajas de pase</li><li>Alargues y zapatillas</li><li>Portalámparas y cintas aisladoras</li></ul><a class="ask" href="https://wa.me/59899537307?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20electricidad" target="_blank" rel="noopener">Consultar por electricidad</a></article>
+        <article class="card cat" id="jardin" data-cat="jardin" style="--c:var(--g)"><b>🌱</b><h3>Jardín y riego</h3><p>Para cuidar el patio y cerrar el terreno.</p><ul><li>Mangueras, conectores y aspersores</li><li>Palas, rastrillos y tijeras</li><li>Carretillas y baldes</li><li>Alambre y tejido para cercos</li><li>Tierra y fertilizantes</li><li>Regaderas y macetas</li></ul><a class="ask" href="https://wa.me/59899537307?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20jard%C3%ADn%20y%20riego" target="_blank" rel="noopener">Consultar por jardín y riego</a></article>
+      </div>
+
+      <div class="vacio" id="vacio" role="status" hidden>
+        <h3>No lo vemos en la lista</h3>
+        <p>Eso no quiere decir que no lo tengamos. Preguntanos y te contestamos.</p>
+        <a class="btn main" href="https://wa.me/59899537307" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+      </div>
+
+      <div class="cierre">
+        <div>
+          <h2>¿No encontrás lo que buscás?</h2>
+          <p>El catálogo es una guía de lo que manejamos. Si necesitás algo puntual o una medida especial, consultanos.</p>
+        </div>
+        <div class="btns">
+          <a class="btn main" href="https://wa.me/59899537307" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn" href="contacto.html">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Vidriería y Ferretería Ituzaingo</footer>
+
+<script src="js/main.js"></script>
+<script src="js/productos.js"></script>
+</body>
+</html>
